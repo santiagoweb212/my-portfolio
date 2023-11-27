@@ -1,6 +1,14 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
-
+@layer utilities {
+    .text-gradient {
+      background: linear-gradient(180deg, #FFD550 5.93%, #EA235F 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent; /* Hace que el texto sea transparente para que se muestre el fondo de gradiente */
+    }
+  }
